@@ -1,19 +1,19 @@
 
-obj_height=.87; // Toggleable
+obj_height=.89; // Toggleable
 slab_height=0.25; 
-obj_width = 27; //adjust to make pretty
+obj_width = 10; //adjust to make pretty
 scale_factor = 1.0 / obj_width;
-rotation = 240; //adjust to make pretty
+rotation = 107; //adjust to make pretty
 filename="generate_all.stl";   // UPDATED
 
 rotate([63,0,90]) {
     // First Line: Shape Name (Larger Font)
     translate([-0.93, -0.33, 0.95]) linear_extrude(0.1) 
-    text("J82", size=0.1);
+    text("J49", size=0.1);
 
     // Second Line: Mu Value (Smaller Font)
     translate([-0.93, -0.45, 0.95]) linear_extrude(0.1) 
-    text("μ = 1.003010991090981", size=0.08);
+    text("μ = 1.0696860392794523", size=0.08);
 }
 
 rotate([0,0,90])translate([0,-2.08,0])polyhedron(
